@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Currency Converter</title>
+</head>
+
+<body class="position-relative">
+  <main class="p-5 rounded-3 m-auto shadow position-absolute">
+    <h2 class="text-uppercase mb-4 text-center">Currency Converter</h2>
+    <label for="amount" class="form-label fs-5">Amount</label>
+    <input class="form-control" type="number" name="amount" id="amount" value="1" placeholder="Amount" autofocus>
+    <!-- Currency -->
+    <div class="d-flex my-4">
+      <!-- currency1 -->
+      <div class="col-6 pe-2">
+        <select name="currency1" class="currency fs-5 bg-color text-white form-select">
+          <option value="USD" selected>USD</option>
+        </select>
+      </div>
+      <!-- currency1 -->
+      <div class="col-6 ps-2">
+        <select name="currency2" class="currency fs-5 bg-color text-white form-select">
+          <option value="EGP" selected>EGP</option>
+        </select>
+      </div>
+    </div>
+    <!-- Convert Button -->
+    <button id="convertBtn" class="btn py-2 fs-5 w-100">Convert</button>
+    <div class="result text-center p-2 mt-4">
+      <p class="resultText m-0 fs-4"></p>
+    </div>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.2s linear 0s;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary: #0b6b9d;
+}
+
+.main-color {
+  color: var(--primary);
+}
+
+.bg-color {
+  background-color: var(--primary);
+}
+
+body {
+  background-image: url(../images/SL-070723-61140-29.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -300px;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--primary);
+  background-color: #ffffffcc;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  border-bottom: 3px solid var(--primary) !important;
+}
+
+label {
+  font-weight: 600;
+}
+
+select {
+  background-image: none !important;
+  cursor: pointer;
+}
+
+option {
+  background-color: var(--white);
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+#convertBtn {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+}
+
+#convertBtn:hover {
+  color: var(--primary);
+  background-color: var(--white);
+}
+.result {
+  background-color: #a6ccd1;
+}
+
+@media (width >= 1280px) {
+  body {
+    background-position: center -380px;
+  }
+}
